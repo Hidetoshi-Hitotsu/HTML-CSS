@@ -1,0 +1,340 @@
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  padding: 20px 0px;
+  position:absolute;
+  width:100%;
+  box-sizing: border-box
+}
+
+.header_Container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px;
+}
+
+.header_link img{
+  height: 20px;
+  transition: 0.5s;
+}
+
+.header_link img:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) { 
+.header_link img{
+  height: 15px;
+}
+}
+
+.header_navi_list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 40px
+}
+.header_navi_list:hover{
+  transition: opacity .1s;
+}
+
+
+.header_navi_link{
+  text-decoration: none;
+  color: black;
+}
+.header_navi_link > span:first-child{
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+}
+.header_navi_link > span:last-child{
+  font-size: 10px;
+}
+.header_navi_link > span{
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
+
+.header_navi_button{
+  text-decoration: none;
+  background-color: #f79214;
+  border-radius: 38px;
+  border-color: #f79214;
+  color: white;
+  font-size: 11px;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  transition: 0.5s;
+}
+.header_navi_button:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1080px) { 
+header{
+  background-color: white;
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+}  
+
+.hamberger{
+  position: relative;
+  width: 30px;
+  height: 25px;
+  z-index: 100;
+}
+.hamberger_line{
+  display: block;
+  border-bottom: solid 2px black;
+  height:7px;
+}
+
+.header_navi_list{
+  display: none;
+}
+}
+
+
+
+.FirstView{
+  background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  padding: 100px 0 30px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.FirstView_img_back{
+  display: none;
+}
+
+
+.FirstView_Container{
+  padding: 0 50px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.FirstView_Content{
+  width: fit-content;
+  margin-bottom: 70px;
+}
+
+
+.FirstView_Container h2{
+  text-align: center;
+  font-family: 'Lato',sans-serif;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.FirstView_img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.FirstView_button li{
+  list-style: none;
+  
+}
+.FirstView_button ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.FirstView_link1{
+  text-decoration: none;
+  background-color: #f79214;
+  border-radius: 38px;
+  border-color: #f79214;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  align-items: center;
+  height: 60px;
+  padding: 0 45px;
+  display: flex;
+  transition: 0.5s;
+}
+.FirstView_link1:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.FirstView_link2{
+  text-decoration: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 38px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
+  transition: 0.5s;
+}
+.FirstView_link2:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.FirstView_Container p{
+  font-size: 11px;
+  color: #e0e0e0;
+}
+
+.terms{
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+@media screen and (max-width: 767px) { 
+.FirstView_img_back{
+  display: block;
+  z-index: 50;
+  width:100%;
+}
+.FirstView{
+  background-image: none;
+  padding: 80px 0 30px 0;
+}
+.FirstView_Container{
+  max-width: none;
+  padding: 0 20px;
+  margin-top: -300px;
+}
+.FirstView_Container h2{
+  font-size: 24px;
+}
+
+.FirstView_Content{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.FirstView_img{
+  margin-bottom: 30px;
+}
+.FirstView_img img:nth-child(2){
+  width: 40%;
+
+}
+.FirstView_img img:first-child{
+  width: 28%;
+}
+.FirstView_img img:last-child{
+  width: 28%;
+}
+
+
+.FirstView_button1{
+  width: 100%;
+  text-align: center
+}
+
+.FirstView_button2{
+  display: none;
+}
+}
+
+
+
+
+
+
+.About_Wrapper{
+  background-color: #f79214;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.About{
+  display: flex;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 1080px) { 
+  .About{
+    flex-direction: column;
+  }
+}
+
+
+.About_Video{
+  display: block;
+  width: 50%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1080px) { 
+  .About_Video{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+.About_Text{
+  width: 50%;
+  color :white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+@media screen and (max-width: 1080px) { 
+  .About_Text{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.About_Text h2{
+  font-size: 34px;
+  font-family: "Lato",sans-serif
+}
+
+@media screen and (max-width: 1080px) { 
+  .About_Text h2{
+    margin-bottom: 0;
+  }
+}
+
+.About_Link{
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+
+
+
+.Fixed_Container{
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+}
+.Fixed_button{
+  text-decoration: none;
+}
+.Fixed_button img{
+  width: 400px;
+}
